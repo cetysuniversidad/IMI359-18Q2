@@ -6,7 +6,7 @@ using CETYS.Posgrado.imi359.Models;
 
 namespace CETYS.Posgrado.imi359.Controllers
 {
-    [ApiVersion("1")]
+    [ApiVersion("2")]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class HumansController : Controller
