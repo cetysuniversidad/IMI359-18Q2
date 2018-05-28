@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CETYS.Posgrado.imi359
+namespace CETYS.Posgrado.imi359.Servicios
 {
     public class Program
     {

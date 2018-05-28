@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "traficopeatonal", "traficopeatonal\traficopeatonal.csproj", "{7E50A2FC-79B3-4F9D-B1B2-C41953CA41E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios", "traficopeatonal\Servicios.csproj", "{7E50A2FC-79B3-4F9D-B1B2-C41953CA41E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clasificador", "Clasificador\Clasificador.csproj", "{56737D01-A198-4B35-9AF4-0F25C688064E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7E50A2FC-79B3-4F9D-B1B2-C41953CA41E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E50A2FC-79B3-4F9D-B1B2-C41953CA41E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E50A2FC-79B3-4F9D-B1B2-C41953CA41E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56737D01-A198-4B35-9AF4-0F25C688064E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56737D01-A198-4B35-9AF4-0F25C688064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56737D01-A198-4B35-9AF4-0F25C688064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56737D01-A198-4B35-9AF4-0F25C688064E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using CETYS.Posgrado.imi359.Models;
+using BdContext = CETYS.Posgrado.imi359.Servicios.Models.BdContext;
 
-namespace CETYS.Posgrado.imi359
+namespace CETYS.Posgrado.imi359.Servicios
 {
     public class Startup
     {
@@ -21,7 +21,7 @@ namespace CETYS.Posgrado.imi359
         public void ConfigureServices(IServiceCollection services)
         {
             // ACTION: To refresh the models use the following PM command
-            // Scaffold-DbContext "server=localhost;userid=eduardo;pwd=elP@ssword1;database=traficopeatonal;sslmode=none;" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -DataAnnotations -f -context "TraficoPeatonalContext"
+            // Scaffold-DbContext "server=localhost;userid=eduardo;pwd=elP@ssword1;database=traficopeatonal;sslmode=none;" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -DataAnnotations -f -context "DBContext"
 
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             var useProdDbText = Environment.GetEnvironmentVariable("USE_PROD_DB");
@@ -32,7 +32,7 @@ namespace CETYS.Posgrado.imi359
                 Configuration.GetConnectionString("Connection_String" + (useProdDb ? "-PROD" : string.Empty)) :
                 Configuration.GetConnectionString("Connection_String");
 
-            services.AddDbContext<TraficoPeatonalContext>(options =>
+            services.AddDbContext<BdContext>(options =>
             {
                 options.UseMySQL(
                     connectionString,

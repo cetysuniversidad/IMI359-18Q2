@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <AssemblyName>trafico-peatonal</AssemblyName>
-    <RootNamespace>CETYS.Posgrado.imi359</RootNamespace>
+    <AssemblyName>Servicios</AssemblyName>
+    <RootNamespace>CETYS.Posgrado.imi359.Servicios</RootNamespace>
     <ApplicationInsightsResourceId>/subscriptions/c742a999-6596-4520-8005-86a8868a8c4b/resourcegroups/CETYS/providers/microsoft.insights/components/imi359</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/c742a999-6596-4520-8005-86a8868a8c4b/resourcegroups/CETYS/providers/microsoft.insights/components/imi359</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.3" />
